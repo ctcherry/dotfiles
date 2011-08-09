@@ -1,0 +1,30 @@
+#!/bin/bash
+
+REPO_BASE='https://macke.inside.einsteinmedical.com/svn/client-websites'
+
+DOMAIN="$1"
+BRANCH="$2"
+
+if [ -z "$DOMAIN" ]
+then
+  echo "Usage: eisvn <domain.com> [branch]"
+  exit
+fi
+
+if [ -z "$BRANCH" ]
+then
+  REPO_PATH="/$DOMAIN/trunk"
+else
+  REPO_PATH="/$DOMAIN/branches/$BRANCH"
+fi
+
+if [ -z "$BRANCH" ]
+then
+  LOCAL_NAME="$DOMAIN"
+else
+  LOCAL_NAME="$DOMAIN-$BRANCH"
+fi
+
+CMD="svn co $REPO_BASE$REPO_PATH $LOCAL_NAME"
+
+$CMD
