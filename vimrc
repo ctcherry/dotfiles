@@ -3,13 +3,13 @@ set nocompatible
 syntax enable
 
 "if has('gui_running')
-"    set background=light
+"  set background=light
 "else
-    set background=dark
+  set background=dark
 "endif
 
 if has("gui_running")
-	set guioptions=-t
+  set guioptions=-t
 endif
 
 set ruler
