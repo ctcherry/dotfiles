@@ -40,7 +40,7 @@ install_folder_items() {
   done
 }
 
-# install_hidden 'gemrc'
-# install_hidden 'vimrc'
-# install_hidden 'vim'
+install_hidden 'gemrc'
+install_hidden 'vimrc'
+install_hidden 'vim'
 install_folder_items 'bin'
