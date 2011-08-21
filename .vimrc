@@ -21,4 +21,12 @@ colorscheme solarized
 set wildmode=longest,list,full
 set wildmenu
 
-set tabstop=2
+set autoindent
+
+" Spaces instead of tab char
+set expandtab
+set smarttab
+
+" 2 spaces per tab
+set shiftwidth=2
+set softtabstop=2
