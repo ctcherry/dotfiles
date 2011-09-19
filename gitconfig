@@ -1,0 +1,13 @@
+[user]
+	name = Chris Cherry
+	email = ctcherry@gmail.com
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[core]
+	excludesfile = /Users/ccherry/.gitignore
+[alias]
+	co = checkout
+	st = status
+	staged = diff --cached

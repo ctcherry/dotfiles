@@ -43,4 +43,6 @@ install_folder_items() {
 install_hidden 'gemrc'
 install_hidden 'vimrc'
 install_hidden 'vim'
+install_hidden 'gitconfig'
+install_hidden 'gitignore'
 install_folder_items 'bin'
