@@ -8,7 +8,7 @@ install_hidden() {
   
   if [ -e $dest ]; then
     if [ -h $dest ]; then
-      if [ $file != `readlink $dest`]; then
+      if [ $file != `readlink $dest` ]; then
         echo "$dest is symlinked somewhere else, remove it first"
       fi
     else
