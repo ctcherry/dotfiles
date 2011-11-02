@@ -37,6 +37,7 @@ set smarttab
 " 2 spaces per tab
 set shiftwidth=2
 set softtabstop=2
+set tabstop=2
 
 " Incremental search starts searching as you type
 set incsearch
@@ -54,3 +55,6 @@ set scrolloff=2
 " Navigate past linebreaks
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
+
+" detect tab settings
+autocmd BufReadPost * :DetectIndent 
